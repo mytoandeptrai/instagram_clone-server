@@ -120,7 +120,7 @@ const authCtrl = {
             );
 
           if (!user)
-            return res.status(400).json({ msg: "This does not exist." });
+            return res.status(400).json({ msg: "This does not exist !." });
 
           const accessToken = createAccessToken({ id: result.id });
           res.json({ accessToken, user });
